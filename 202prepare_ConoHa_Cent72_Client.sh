@@ -45,6 +45,6 @@ systemctl set-default graphical.target
 systemctl disable firewalld
 echo "export LANG=ja_JP.UTF-8" >> /etc/bashrc
 echo "export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin" >> /etc/bashrc
-echo "PS1='[\u@Client \W]\$'" >> /etc/bashrc
+echo "PS1='[\u@Client \W]\#'" >> /etc/bashrc
 
 shutdown -h now
