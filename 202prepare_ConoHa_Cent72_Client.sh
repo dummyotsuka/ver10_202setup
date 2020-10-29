@@ -25,6 +25,7 @@ yum -y install mkisofs
 yum -y install evolution
 yum -y install thunderbird
 yum -y install nmap
+yum -y install telnet
 
 
 SetupDisk 0
