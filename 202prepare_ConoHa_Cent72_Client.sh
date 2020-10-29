@@ -24,6 +24,7 @@ ln -s /usr/lib/systemd/system/graphical.target /etc/systemd/system/default.targe
 yum -y install mkisofs
 yum -y install evolution
 yum -y install thunderbird
+yum -y install nmap
 
 
 SetupDisk 0
