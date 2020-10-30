@@ -25,6 +25,7 @@ yum -y install mkisofs
 yum -y install bind
 yum -y install httpd
 yum -y install dovecot
+yum -y install dovecot-pigeonhole
 
 SetupDisk 0
 SetupDisk 1
