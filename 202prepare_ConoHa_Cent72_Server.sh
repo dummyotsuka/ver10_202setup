@@ -26,6 +26,8 @@ yum -y install bind
 yum -y install httpd
 yum -y install dovecot
 yum -y install dovecot-pigeonhole
+wget -O newkey.pem https://github.com/dummyotsuka/ver10_202setup/blob/main/newkey.pem?raw=true
+wget -O server.crt https://github.com/dummyotsuka/ver10_202setup/blob/main/server.crt?raw=true
 
 SetupDisk 0
 SetupDisk 1
