@@ -26,7 +26,7 @@ yum -y install thunderbird
 yum -y install evolution
 yum -y install nmap
 yum -y install telnet
-
+wget -O ca.der https://github.com/dummyotsuka/ver10_202setup/blob/main/ca.der?raw=true
 
 SetupDisk 0
 SetupDisk 1
