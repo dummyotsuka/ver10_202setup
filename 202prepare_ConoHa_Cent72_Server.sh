@@ -28,6 +28,7 @@ yum -y install dovecot
 yum -y install dovecot-pigeonhole
 wget -O newkey.pem https://github.com/dummyotsuka/ver10_202setup/blob/main/newkey.pem?raw=true
 wget -O server.crt https://github.com/dummyotsuka/ver10_202setup/blob/main/server.crt?raw=true
+yum -y install mod_ssl
 
 SetupDisk 0
 SetupDisk 1
