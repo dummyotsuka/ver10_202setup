@@ -30,6 +30,7 @@ wget -O newkey.pem https://github.com/dummyotsuka/ver10_202setup/blob/main/newke
 wget -O server.crt https://github.com/dummyotsuka/ver10_202setup/blob/main/server.crt?raw=true
 yum -y install mod_ssl
 yum -y install nginx
+yum -y install ImageMagick
 
 SetupDisk 0
 SetupDisk 1
