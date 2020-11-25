@@ -58,17 +58,6 @@ echo "export LANG=ja_JP.UTF-8" >> /etc/bashrc
 echo "export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin" >> /etc/bashrc
 echo "PS1='[\u@Server \W]\\$'" >> /etc/bashrc
 
-rm -rf  /etc/openldap/slapd.d
-rm -rf /var/lib/ldap/*
-
-
-cp /usr/share/openldap-servers/slapd.conf.obsolete  /etc/openldap/slapd.conf
-cp /usr/share/openldap-servers/DB_CONFIG.example  /var/lib/ldap/DB_CONFIG
-chown  -R  ldap:ldap  /var/lib/ldap/
-cd /etc/openldap/
-wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/slapd.conf
-
-echo 'SLAPD_OPTIONS="-f /etc/openldap/slapd.conf"' >> /etc/sysconfig/slapd
 
 systemctl start slapd
 systemctl enable slapd
