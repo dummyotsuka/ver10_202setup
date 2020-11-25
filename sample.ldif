@@ -1,0 +1,93 @@
+dn:dc=example,dc=com
+objectClass:organization
+objectClass:dcObject
+o:NGN-SF
+dc:example
+
+dn:ou=People,dc=example,dc=com
+objectClass:organizationalUnit
+ou:People
+
+dn:ou=Group,dc=example,dc=com
+objectClass:organizationalUnit
+ou:Group
+
+dn:uid=admin,ou=People,dc=example,dc=com
+objectClass:inetOrgPerson
+objectClass:posixAccount
+cn:admin user
+sn:user
+uid:admin
+userPassword:ngn-sf
+uidNumber:1000
+gidNumber:1000
+loginShell:/bin/bash
+homeDirectory:/home/admin
+gecos: LDAP Account for admin
+
+dn:cn=admin,ou=Group,dc=example,dc=com
+objectClass:posixGroup
+cn:admin
+gidNumber:1000
+
+dn:uid=frank,ou=People,dc=example,dc=com
+objectClass:inetOrgPerson
+objectClass:posixAccount
+cn:Frank Lucas
+sn:Lucas
+uid:frank
+userPassword:ngn-sf
+uidNumber:1001
+gidNumber:1001
+loginShell:/bin/bash
+homeDirectory:/home/frank
+gecos: LDAP Account for frank
+
+dn:uid=george,ou=People,dc=example,dc=com
+objectClass:inetOrgPerson
+objectClass:posixAccount
+cn:George Harrison
+sn:Harrison
+uid:george
+userPassword:ngn-sf
+uidNumber:1002
+gidNumber:1001
+loginShell:/bin/bash
+homeDirectory:/home/george
+gecos: LDAP Account for george
+
+dn:uid=henry,ou=People,dc=example,dc=com
+objectClass:inetOrgPerson
+objectClass:posixAccount
+cn:Henry Cottons
+sn:Cottons
+uid:henry
+userPassword:ngn-sf
+uidNumber:1003
+gidNumber:1002
+loginShell:/bin/bash
+homeDirectory:/home/henry
+gecos:LDAP Account for henry
+
+dn:uid=alan,ou=People,dc=example,dc=com
+objectClass:inetOrgPerson
+objectClass:posixAccount
+cn:Alan Rickman
+sn:Rickman
+uid:alan
+userPassword:ngn-sf
+uidNumber:1004
+gidNumber:1002
+loginShell:/bin/bash
+homeDirectory:/home/alan
+gecos:LDAP Account for alan
+
+dn:cn=standard-group,ou=Group,dc=example,dc=com
+objectClass:posixGroup
+cn:standard-group
+gidNumber:1001
+
+dn:cn=unique-group,ou=Group,dc=example,dc=com
+objectClass:posixGroup
+cn:unique-group
+gidNumber:1002
