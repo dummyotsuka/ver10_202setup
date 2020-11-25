@@ -32,6 +32,7 @@ yum -y install mod_ssl
 yum -y install nginx
 yum -y install ImageMagick
 yum -y install samba
+yum -y install openldap openldap-servers openldap-clients
 
 SetupDisk 0
 SetupDisk 1
