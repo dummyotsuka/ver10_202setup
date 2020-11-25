@@ -72,6 +72,8 @@ wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/change-do
 cd ../
 ldapadd -Y EXTERNAL -H ldapi:// -f ./ldap_work/add_rootPw.ldif
 ldapmodify -x -D cn=config -w ngn-sf -f ./ldap_work/change-domain.ldif
-
+ldapadd -Y EXTERNAL -H ldapi:// -f /etc/openldap/schema/cosine.ldif
+ldapadd -Y EXTERNAL -H ldapi:// -f /etc/openldap/schema/inetorgperson.ldif
+ldapadd -Y EXTERNAL -H ldapi:// -f /etc/openldap/schema/nis.ldif 
 
 shutdown -h now
