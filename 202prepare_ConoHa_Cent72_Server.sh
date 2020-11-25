@@ -76,4 +76,7 @@ ldapadd -Y EXTERNAL -H ldapi:// -f /etc/openldap/schema/cosine.ldif
 ldapadd -Y EXTERNAL -H ldapi:// -f /etc/openldap/schema/inetorgperson.ldif
 ldapadd -Y EXTERNAL -H ldapi:// -f /etc/openldap/schema/nis.ldif 
 
+wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/sample.ldif
+wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/modify.ldif
+
 shutdown -h now
