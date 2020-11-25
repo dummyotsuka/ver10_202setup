@@ -35,8 +35,7 @@ yum -y install samba
 yum -y install openldap openldap-servers openldap-clients
 
 
-cp -a /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG
-
+cp -p /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG
 
 
 SetupDisk 0
