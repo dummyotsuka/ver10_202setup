@@ -62,9 +62,16 @@ echo "export LANG=ja_JP.UTF-8" >> /etc/bashrc
 echo "export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin" >> /etc/bashrc
 echo "PS1='[\u@Server \W]\\$'" >> /etc/bashrc
 
-
 systemctl start slapd
 systemctl enable slapd
+
+mkdir ldap_work
+cd ldap_work
+wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/add_rootPw.ldif
+wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/add_rootPw.ldif
+cd ../
+ldapadd -Y EXTERNAL -H ldapi:// -f ./ldap_work/add_rootPw.ldif
+ldapmodify -x -D cn=config -w ngn-sf -f ./ldap_work/change-domain.ldif
 
 
 shutdown -h now
