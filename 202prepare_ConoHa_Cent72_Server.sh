@@ -31,6 +31,7 @@ wget -O server.crt https://github.com/dummyotsuka/ver10_202setup/blob/main/serve
 yum -y install mod_ssl
 yum -y install nginx
 yum -y install ImageMagick
+yum -y install samba
 
 SetupDisk 0
 SetupDisk 1
