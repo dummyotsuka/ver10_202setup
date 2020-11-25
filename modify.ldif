@@ -1,32 +1,32 @@
-dn:uid=frank,ou=People,dc=sample-domain,dc=com
+dn:uid=frank,ou=People,dc=example,dc=com
 changetype:modify
 add:telephoneNumber
 telephoneNumber:090-xxxx-yyyy
 -
 add:mail
-mail:frank@sample.co.jp
+mail:frank@example.com
 
-dn:uid=george,ou=People,dc=sample-domain,dc=com
+dn:uid=george,ou=People,dc=example,dc=com
 changetype:modify
 add:telephoneNumber
 telephoneNumber:090-xxxx-yyyy
 -
 add:mail
-mail:george@sample.co.jp
+mail:george@example.com
 
-dn:uid=henry,ou=People,dc=sample-domain,dc=com
+dn:uid=henry,ou=People,dc=example,dc=com
 changetype:modify
 add:telephoneNumber
 telephoneNumber:080-xxxx-yyyy
 -
 add:mail
-mail:henry@sample.co.jp
+mail:henry@example.com
 
-dn:uid=alan,ou=People,dc=sample-domain,dc=com
+dn:uid=alan,ou=People,dc=example,dc=com
 changetype:modify
 add:telephoneNumber
 telephoneNumber:080-xxxx-yyyy
 -
 add:mail
 
-mail:alan@sample.co.jp
+mail:alan@example.com
