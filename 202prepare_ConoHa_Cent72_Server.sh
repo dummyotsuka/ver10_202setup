@@ -67,6 +67,9 @@ cp /usr/share/openldap-servers/DB_CONFIG.example  /var/lib/ldap/DB_CONFIG
 chown  -R  ldap:ldap  /var/lib/ldap/
 cd /etc/openldap/
 wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/slapd.conf
+
+echo 'SLAPD_OPTIONS="-f /etc/openldap/slapd.conf"' >> /etc/sysconfig/slapd
+
 systemctl start slapd
 systemctl enable slapd
 
