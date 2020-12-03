@@ -78,5 +78,7 @@ ldapadd -Y EXTERNAL -H ldapi:// -f /etc/openldap/schema/nis.ldif
 
 wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/sample.ldif
 wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/modify.ldif
+wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/acl.ldif
+
 
 shutdown -h now
