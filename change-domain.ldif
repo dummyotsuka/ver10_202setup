@@ -12,7 +12,7 @@ olcSuffix: dc=example,dc=com
 dn: olcDatabase={2}hdb,cn=config
 changetype: modify
 replace: olcRootDN
-olcRootDN: cn=Manager,dc=example,dc=com
+olcRootDN: uid=admin,ou=People,dc=example,dc=com
 
 dn: olcDatabase={2}hdb,cn=config
 changetype: modify
