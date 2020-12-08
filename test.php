@@ -1,3 +1,4 @@
+<?php include('./index.html'); ?>
 <?php
     $connection = mysql_connect('localhost', 'root', '') or die('error(connect)');
 
