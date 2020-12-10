@@ -34,7 +34,6 @@ SetupDisk 1
 mkfs.ext4 /root/vdisk0 << E
 y
 E
-echo 'mount /root/vdisk0 /mnt/mnt0' >> /root/.bashrc
 
 updatedb
 
