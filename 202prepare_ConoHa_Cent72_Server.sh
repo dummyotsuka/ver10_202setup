@@ -18,6 +18,11 @@ passwd user01 --stdin << E
 ngn-sf
 ngn-sf
 E
+useradd user02
+passwd user02 --stdin << E
+ngn-sf
+ngn-sf
+E
 yum -y install xclock
 yum -y install git
 yum -y install gcc
