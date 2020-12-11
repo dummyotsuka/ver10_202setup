@@ -29,7 +29,7 @@ yum -y install telnet
 yum -y install sssd sssd-client sssd-ldap
 
 wget -O ca.der https://github.com/dummyotsuka/ver10_202setup/blob/main/ca.der?raw=true
-wget -O sssd.conf https://github.com/dummyotsuka/ver10_202setup/blob/main/sssd.conf
+wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/sssd.conf
 
 
 SetupDisk 0
