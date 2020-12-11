@@ -89,5 +89,6 @@ wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/sample.ld
 wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/modify.ldif
 wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/acl.ldif
 wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/test.php
+wget https://raw.githubusercontent.com/dummyotsuka/ver10_202setup/main/sssd.conf
 
 shutdown -h now
